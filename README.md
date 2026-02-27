@@ -23,11 +23,28 @@ A feature-rich Android photo collage and photo-editing application built with Ja
 
 ## Screenshots
 
-> Add screenshots here by placing images in `assets/screenshots/` and referencing them below.
+> Drop your `.png` / `.jpg` screenshots into the [`screenshots/`](screenshots/) folder using the filenames below, and they will automatically appear here.
 
-| Home Screen | Collage Editor | Template Picker | Photo Editor |
-|-------------|---------------|-----------------|--------------|
-| _coming soon_ | _coming soon_ | _coming soon_ | _coming soon_ |
+| Home Screen | Collage Editor | Frame Picker | Template Picker |
+|:-----------:|:--------------:|:------------:|:---------------:|
+| ![Home](screenshots/home.png) | ![Collage Editor](screenshots/collage_editor.png) | ![Frame Picker](screenshots/frame_picker.png) | ![Template Picker](screenshots/template_picker.png) |
+
+| Photo Editor | Gallery / Select Photos | Add Text | Saved Collage |
+|:------------:|:-----------------------:|:--------:|:-------------:|
+| ![Photo Editor](screenshots/photo_editor.png) | ![Gallery](screenshots/gallery.png) | ![Add Text](screenshots/add_text.png) | ![Saved Collage](screenshots/saved_collage.png) |
+
+**Expected filenames inside [`screenshots/`](screenshots/):**
+
+| Filename | Screen |
+|----------|--------|
+| `home.png` | Main home screen with 3 creation mode buttons |
+| `collage_editor.png` | Free-form collage canvas with multi-touch |
+| `frame_picker.png` | Grid frame layout selection |
+| `template_picker.png` | Template browser |
+| `photo_editor.png` | Single photo editor with filters |
+| `gallery.png` | Album browser / photo selection |
+| `add_text.png` | Text overlay editor |
+| `saved_collage.png` | Finished / exported collage |
 
 ---
 
