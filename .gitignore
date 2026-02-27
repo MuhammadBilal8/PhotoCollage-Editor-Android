@@ -1,0 +1,244 @@
+# =============================================================================
+# Android Project .gitignore
+# Photo Collage Editor - Android Application
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# Gradle Build System
+# -----------------------------------------------------------------------------
+.gradle/
+build/
+**/build/
+gradle-app.setting
+!gradle-wrapper.jar
+!gradle-wrapper.properties
+
+# Gradle wrapper distribution (keep wrapper, ignore downloads)
+.gradle/
+gradle/wrapper/gradle-wrapper.jar
+
+# Gradle cache
+.gradle/caches/
+.gradle/daemon/
+.gradle/native/
+.gradle/wrapper/dists/
+
+# -----------------------------------------------------------------------------
+# Android Studio / IntelliJ IDEA IDE Files
+# -----------------------------------------------------------------------------
+*.iml
+.idea/
+!.idea/codeStyles/
+!.idea/scopes/
+*.ipr
+*.iws
+
+# Android Studio version file
+.idea/.name
+.idea/compiler.xml
+.idea/copyright/
+.idea/deploymentTargetDropDown.xml
+.idea/gradle.xml
+.idea/jarRepositories.xml
+.idea/migrations.xml
+.idea/misc.xml
+.idea/modules.xml
+.idea/runConfigurations/
+.idea/workspace.xml
+
+# -----------------------------------------------------------------------------
+# Local Configuration (Device / Developer Specific - NEVER commit these)
+# -----------------------------------------------------------------------------
+
+# Android SDK path - different per machine
+local.properties
+
+# User-specific Gradle settings
+.gradle/config.properties
+
+# -----------------------------------------------------------------------------
+# Sensitive / Secret Files (CRITICAL - Never commit keys or credentials)
+# -----------------------------------------------------------------------------
+
+# Google Services configuration (contains API keys)
+google-services.json
+
+# Firebase configuration
+google-services.json
+firebase.json
+
+# Release signing keystore and key config
+*.keystore
+*.jks
+keystore.properties
+release.properties
+signing.properties
+
+# Any file that might contain secrets
+secrets.properties
+api_keys.properties
+credentials.properties
+
+# Firebase App Distribution
+app-distribution.properties
+
+# -----------------------------------------------------------------------------
+# Generated Source Files
+# -----------------------------------------------------------------------------
+
+# R.java and BuildConfig generated files
+app/build/generated/
+**/generated/
+
+# Annotation processor outputs
+**/ap_generated_sources/
+
+# -----------------------------------------------------------------------------
+# Module-Level Build Outputs
+# -----------------------------------------------------------------------------
+app/build/
+photoEditor/build/
+dauroiimageprocessing/build/
+NativeTemplatesAndroid-1.0.0/build/
+NativeTemplatesAndroid-1.0.0/temp/
+
+# -----------------------------------------------------------------------------
+# APK, AAB and Release Artifacts
+# -----------------------------------------------------------------------------
+*.apk
+*.aab
+*.ap_
+*.aar
+output.json
+output-metadata.json
+
+# Release build outputs (only committed intentionally)
+app/release/
+app/debug/
+
+# -----------------------------------------------------------------------------
+# NDK / Native Code Artifacts (dauroiimageprocessing uses native filters)
+# -----------------------------------------------------------------------------
+obj/
+libs/*.so
+.externalNativeBuild/
+cmake-build-*/
+.cxx/
+
+# NDK generated files
+*.o
+*.so
+*.a
+*.ko
+*.out
+
+# -----------------------------------------------------------------------------
+# ProGuard / R8
+# -----------------------------------------------------------------------------
+proguard/
+*.pro.bak
+
+# ProGuard mapping files (archive these separately if needed for crash analysis)
+**/mapping.txt
+**/seeds.txt
+**/usage.txt
+
+# -----------------------------------------------------------------------------
+# Test and Coverage Reports
+# -----------------------------------------------------------------------------
+test-results/
+**/test-results/
+**/jacoco/
+coverage/
+.coverage
+*.exec
+
+# -----------------------------------------------------------------------------
+# Operating System Files
+# -----------------------------------------------------------------------------
+
+# macOS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+.AppleDouble
+.LSOverride
+Icon?
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+*~
+
+# -----------------------------------------------------------------------------
+# Captured Images & Temporary Media
+# (generated at runtime, not part of source code)
+# -----------------------------------------------------------------------------
+*.tmp
+*.temp
+capture_*
+screenshot_*
+
+# -----------------------------------------------------------------------------
+# Lint Reports
+# -----------------------------------------------------------------------------
+lint-results/
+lint-results*.xml
+lint-results*.html
+**/lint/
+
+# -----------------------------------------------------------------------------
+# Dependency Locks (optional - uncomment if using Gradle dependency locking)
+# -----------------------------------------------------------------------------
+# *.lockfile
+
+# -----------------------------------------------------------------------------
+# Profiling & Benchmarking
+# -----------------------------------------------------------------------------
+*.hprof
+*.trace
+
+# -----------------------------------------------------------------------------
+# CI/CD & Pipeline Files (optional — keep if you're not using these)
+# -----------------------------------------------------------------------------
+# .github/ (keep for workflow configs)
+# .circleci/
+# .travis.yml
+
+# -----------------------------------------------------------------------------
+# Miscellaneous
+# -----------------------------------------------------------------------------
+
+# Eclipse project files (in case anyone uses Eclipse)
+.project
+.classpath
+.settings/
+
+# NetBeans
+nbproject/private/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+# VSCode
+.vscode/
+*.code-workspace
+
+# IntelliJ
+out/
+*.class
+
+# Crashlytics
+com_crashlytics_export_strings.xml
+crashlytics-build.properties
+crashlytics.properties
